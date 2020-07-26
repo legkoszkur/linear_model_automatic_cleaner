@@ -1,5 +1,4 @@
 import pandas as pd
-# Testowa ścieżka C:/Users/Janusz/Desktop/projekty/bazy dnaych/Fin_Dis.csv
 
 while True:
     try:
