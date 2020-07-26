@@ -1,7 +1,7 @@
 
 from data_input import the_data
 
-#endogenic variable input
+
 while True:
     y_endo = input("Pleace insetr your endogenic variable:")
     if y_endo in the_data.columns.values:
@@ -10,8 +10,8 @@ while True:
     else:
         print("Your input variable do not belongs to variables from file.")
         continue
-##########################################################################
-#egzogenic variable amount question
+
+
 while True:
   try:
      how_many_variables = int(input("How many egzogenic variables do you want to insert:"))
@@ -22,8 +22,7 @@ while True:
   except ValueError:
       print("Pleace insert intiger.")
       continue
-##########################################################################
-#egzogenic data input
+
 zero_number = 0
 x_egzo = []
 while zero_number < how_many_variables:
@@ -31,7 +30,7 @@ while zero_number < how_many_variables:
     if temporary_variable != y_endo:
         if temporary_variable not in x_egzo:
             if temporary_variable in the_data.columns and temporary_variable:
-                x_egzo.append(temporary_variable) #to dodaje te wartośi
+                x_egzo.append(temporary_variable) 
                 zero_number += 1
             else:
                 print("Your input variable do not belongs to variables from file!")
