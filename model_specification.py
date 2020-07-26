@@ -40,5 +40,5 @@ while zero_number < how_many_variables:
         print("Exogenous variable can not be the same as endogenous is!")
 
 print("Your chosen variables. Endogenius:",y_endo,".Egzogenius:",x_egzo)
-##########################################################################
+
 
